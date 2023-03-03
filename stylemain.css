@@ -1,0 +1,236 @@
+
+:root { font-size: 16px }
+@media (max-width: 500px) { :root { font-size: 14px } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(254, 170, 3, 0.883);
+  color: white;
+}
+
+body {
+  overflow: hidden;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+h1 { font-size: 5rem }
+h2 { font-size: 2rem }
+
+demo-gallery img {
+  width: 100%;
+  height: 100vh;
+  /* border: 50px white; */
+  background: #f0f0f0;
+}
+
+.wrapper ul{
+  /* padding-left: 8rem; */
+  list-style: none;
+}
+.wrapper li img:not(.last){
+  margin-top: 20px;
+  padding-left: 10rem;
+  padding-right: 5rem;
+}
+.wrapper li {
+  flex-shrink: 100;
+  list-style: none;
+  width: clamp(500px, 60vw, 800px);
+  
+}
+
+header {height: 100vh}
+footer {height: 50vh}
+
+.df {display: flex}
+.aic {align-items: center}
+.jcc {justify-content: center}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  color: white;
+}
+
+.demo-wrapper {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.demo-gallery:not(.last) {
+  padding-bottom: 1rem;
+}
+
+.demo-text .text {
+  font-size: clamp(5rem, 5vw, 14rem);
+  line-height: 1;
+  font-weight: 900;
+}
+.font-size{
+    font-size: 60pt;
+}
+
+.header {
+  background-color: rgba(254, 170, 3, 0.883);
+  overflow: hidden;
+  display: block;
+  padding: 15px;
+  font-size: 15px;
+  position: sticky;
+  /* font-family: 'Plus Jakarta Sans', sans-serif; */
+}
+
+.ul1 {
+  /* font-family: 'Plus Jakarta Sans', sans-serif; */
+  display: flex;
+  float: right;
+  gap: 3em;
+  padding-right: 90px;
+}
+
+.header img {
+  padding: 1px;
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
+}
+
+.header li {
+  list-style-type: none;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  padding-right: 30px;
+  line-height: 20px;
+  vertical-align: top;
+  transition: 500ms linear;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  transition: 500ms linear;
+}
+
+.header li a:hover {
+  color: black;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  background-color: white;
+}
+
+.content {
+  margin-top: 14px;
+  padding-top: 14px;
+}
+
+.hello {
+  font-size: 35px;
+  padding-bottom: 6px;
+  letter-spacing: 9px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.name {
+  letter-spacing: 3px;
+}
+h1 {
+  /* font-family: 'Plus Jakarta Sans', sans-serif; */
+  font-size: 45pt;
+  padding: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+}
+
+.content p {
+  padding: 20px;
+  padding-top: 0px;
+  font-weight: 400;
+  font-size: 16pt;
+}
+.icon {
+  float: right;
+  width: 75%;
+  height: 80%;
+  border-radius: 100%;
+  border-width: 0px;
+  border-spacing: 0;
+  border: 7px dotted black;
+  transition: border linear ;
+  
+}
+#footer {
+  color: white;
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(254, 170, 3, 0.883);
+  line-height: 36px;
+  z-index: 10;
+}
+
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer h4 {
+  letter-spacing: 6px;
+  font-weight: 900;
+}
+.logoid img{
+  padding: 19px;
+  padding-bottom: 0;
+  width: 30px;
+  height: 30px;
+  vertical-align: bottom;
+  z-index: 11;
+}
+.about{
+  padding: 20px;
+  margin-left: 52px;
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+.projects{
+  margin-top: 20px;
+}
+.projects > p::selection{
+  background: black;
+  color: white;
+}
+ .projects >p{
+  padding: 20px;
+  letter-spacing: 8px;
+  transition: 500ms ease-in-out;
+  font-weight:bold;
+}
+
+.projects > p:hover{
+  background-color: rgba(254, 170, 3, 0.883);
+  color: white;
+}
+span{
+  padding: 20px;
+  margin-left: 55px;
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
