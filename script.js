@@ -63,7 +63,7 @@ ScrollTrigger.create({
   end: "top 100px",
   onEnter: () => {
     const t = gsap.timeline({ defaults: { duration: 2 } })
-    t.fromTo(".icon", { y: "0%" }, { y: "120%" })
+    t.fromTo(".icon", { y: "0%" }, { y: "125%" })
   onEnterBack: () => {
       const t = gsap.timeline({ defaults: { duration: 1 } })
       t.fromTo(".icon", { y: "130%" }, { y: "0%" })
