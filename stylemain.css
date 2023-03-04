@@ -227,10 +227,38 @@ h1 {
   background-color: rgba(254, 170, 3, 0.883);
   color: white;
 }
-span{
+.lang{
   padding: 20px;
   margin-left: 55px;
   font-size: 14px;
   letter-spacing: 5px;
   font-weight: bold;
+}
+.aboutme{
+  margin-top: -40px;
+  padding:20px;
+margin-left: 54px;
+
+}
+.aboutme p{
+  padding: 50px;
+}
+.whoareyou{
+  position: absolute;
+  left: 15%;
+  color:rgba(254, 170, 3, 0.883) ;
+  top: 8%;
+  font-size: 2rem;
+  transform: rotate(10 deg);
+  transform: translate(10%,3.5%);
+  font-family: 'Alex Brush', cursive;
+}
+
+.enlarge{
+  font-size: 5.5rem;
+
+}
+
+.aboutme p{
+  margin-left: 7rem;
 }
