@@ -189,7 +189,7 @@ h1 {
   padding: 40px;
   background-color: rgba(254, 170, 3, 0.883);
   line-height: 36px;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 #footer a {
@@ -201,14 +201,14 @@ h1 {
   letter-spacing: 6px;
   font-weight: 900;
 }
-.logoid img{
+/* .logoid img{
   padding: 19px;
   padding-bottom: 0;
   width: 30px;
   height: 30px;
   vertical-align: bottom;
   z-index: 11;
-}
+} */
 .about{
   padding: 20px;
   margin-left: 52px;
@@ -227,6 +227,8 @@ h1 {
   letter-spacing: 8px;
   transition: 500ms ease-in-out;
   font-weight:bold;
+  letter-spacing: 0.2rem;
+  line-height: 2vh;
 }
 
 .projects > p:hover{
@@ -253,11 +255,10 @@ margin-left: 54px;
   position: absolute;
   left: 15%;
   color:rgba(254, 170, 3, 0.883) ;
-  top: 8%;
-  font-size: 2rem;
+  top: 15%;
+  font-size: 1.5rem;
   transform: rotate(10 deg);
   transform: translate(10%,3.5%);
-  font-family: 'Alex Brush', cursive;
 }
 
 .enlarge{
@@ -267,4 +268,21 @@ margin-left: 54px;
 
 .aboutme p{
   margin-left: 7rem;
+}
+.border{
+  border-bottom: dashed rgba(254, 170, 3, 0.883);
+}
+
+.logoid img{
+  padding: 19px;
+  padding-bottom: 0;
+  /* width: 30px; */
+  height: 6vw;
+  /* background-color: black; */
+  aspect-ratio: 1/1;
+}
+
+.projects a{
+ text-decoration: none;
+ color: black;
 }
