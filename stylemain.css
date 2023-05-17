@@ -282,7 +282,7 @@ margin-left: 54px;
   aspect-ratio: 1/1;
 }
 
-.projects a{
+.projects p>a{
  text-decoration: none;
  color: black;
 }
