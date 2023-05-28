@@ -8,6 +8,10 @@ t1.fromTo("h2", { x: "20%" }, { x: "0%" })
 t1.fromTo("p", { opacity: 0}, { opacity: 1 })
 t1.fromTo(".explore", { opacity: 0}, { opacity: 100 })
 
+const sizes = {
+    width: window.innerWidth,
+    height: window.innerHeight
+}
 const section = document.querySelector("section")
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth /
@@ -32,7 +36,16 @@ flag.rotation.set(-0.1, 0, 0)
 camera.position.z = 5;
 const clock = new THREE.Clock()
 
-
+//resize // #
+window.addEventListener("resize", () => {
+    //Update size according to new screen size
+    sizes.width = window.innerWidth
+    sizes.height = window.innerHeight
+    //update camera
+    camera.updateProjectionMatrix()
+    camera.aspect = sizes.width / sizes.height
+    renderer.setSize(sizes.width, sizes.height)
+})
 
 function animate() {
 
@@ -54,3 +67,27 @@ function animate() {
 }
 renderer.render(scene, camera);
 animate();
+
+//only for pc code
+window.addEventListener("load", function() {
+    if (screen.width < 768) {
+      document.getElementById("warnmsg").style.display = "block";
+      document.getElementById("warnmsg").style.paddingLeft = "0.5rem";
+      document.getElementById("warnmsg").style.textAlign = "left";
+      document.getElementById("warnmsg").style.fontSize = "0.5rem";
+      document.getElementById("warnmsg").style.width = '100vw';
+      document.getElementById("warnmsg").style.whiteSpace = 'normal';
+      document.getElementById("warnmsg").style.overflowWrap = 'break-word';
+      document.getElementById("warnmsg").style.overflowX = 'hidden';
+      document.getElementById("warnmsg").style.fontWeight = '400';
+        
+      
+    //   document.getElementById("warnmsg").style.padding = "2rem";
+
+
+      document.getElementById("home").style.display = "none";
+     
+      console.log(screen.width)
+    }
+  });
+  
