@@ -45,6 +45,23 @@ window.addEventListener("resize", () => {
     camera.updateProjectionMatrix()
     camera.aspect = sizes.width / sizes.height
     renderer.setSize(sizes.width, sizes.height)
+
+    if (screen.width < 768) {
+        document.getElementById("warnmsg").style.display = "block";
+        document.getElementById("warnmsg").style.padding = "0.1rem";
+        document.getElementById("warnmsg").style.paddingLeft = "0.5rem";
+        document.getElementById("warnmsg").style.textAlign = "left";
+        document.getElementById("warnmsg").style.fontSize = "0.8rem";
+        document.getElementById("warnmsg").style.width = '100vw';
+        document.getElementById("warnmsg").style.whiteSpace = 'normal';
+        document.getElementById("warnmsg").style.overflowWrap = 'break-word';
+        document.getElementById("warnmsg").style.overflowX = 'hidden';
+        document.getElementById("warnmsg").style.fontWeight = '400';
+  
+        document.getElementById("home").style.display = "none";
+       
+        console.log(screen.width)
+    }
 })
 
 function animate() {
@@ -80,10 +97,6 @@ window.addEventListener("load", function() {
       document.getElementById("warnmsg").style.overflowWrap = 'break-word';
       document.getElementById("warnmsg").style.overflowX = 'hidden';
       document.getElementById("warnmsg").style.fontWeight = '400';
-        
-      
-    //   document.getElementById("warnmsg").style.padding = "2rem";
-
 
       document.getElementById("home").style.display = "none";
      
